@@ -1,11 +1,22 @@
-import { Text, View } from "react-native";
+import { Slot } from "expo-router";
+import { Text } from "react-native";
+import { SafeAreaView } from "react-native-safe-area-context";
 
-const _layout = () => {
+export default function _Layout() {
   return (
-    <View>
-      <Text>Auth Layout</Text>
-    </View>
+    <SafeAreaView>
+      <Text>Auth layout</Text>
+      <Slot />
+    </SafeAreaView>
   );
-};
+}
 
-export default _layout;
+// export default function _Layout() {
+//   return (
+//     <SafeAreaView>
+//       <Text>Auth layout</Text>
+//       <Slot />  // slot Renders pages on the tabs group as they are
+
+//     </SafeAreaView>
+//   );
+// }
