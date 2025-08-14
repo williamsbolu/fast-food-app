@@ -15,7 +15,7 @@ const CustomInput = ({
 
   return (
     <View className="w-full">
-      <Text>{label}</Text>
+      <Text className="label">{label}</Text>
 
       <TextInput
         autoCapitalize="none"
