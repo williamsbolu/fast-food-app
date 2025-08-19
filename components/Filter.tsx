@@ -19,8 +19,18 @@ const Filter = ({ categories }: { categories: Category[] }) => {
     else router.setParams({ category: id });
   };
 
+  // const filterData: (Category | { $id: string; name: string })[] = categories
+  //   ? [{ $id: "all", name: "All" }, ...categories]
+  //   : [{ $id: "all", name: "All" }];
+
   const filterData: (Category | { $id: string; name: string })[] = categories
-    ? [{ $id: "all", name: "All" }, ...categories]
+    ? [
+        { $id: "all", name: "All" },
+        ...categories.map((category) => ({
+          $id: category.$id,
+          name: category.name,
+        })),
+      ]
     : [{ $id: "all", name: "All" }];
 
   return (

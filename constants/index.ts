@@ -1,4 +1,3 @@
-import arrowBack from "../assets/icons/arrow-back.png";
 import arrowDown from "@/assets/icons/arrow-down.png";
 import arrowRight from "@/assets/icons/arrow-right.png";
 import bag from "@/assets/icons/bag.png";
@@ -18,6 +17,7 @@ import search from "@/assets/icons/search.png";
 import star from "@/assets/icons/star.png";
 import trash from "@/assets/icons/trash.png";
 import user from "@/assets/icons/user.png";
+import arrowBack from "../assets/icons/arrow-back.png";
 
 import avatar from "@/assets/images/avatar.png";
 import avocado from "@/assets/images/avocado.png";
@@ -70,24 +70,28 @@ export const offers = [
     title: "SUMMER COMBO",
     image: burgerOne,
     color: "#D33B0D",
+    filterId: "68a0881d0021ec54cc5a",
   },
   {
     id: 2,
     title: "BURGER BASH",
     image: burgerTwo,
     color: "#DF5A0C",
+    filterId: "68a0881e0007d8e9f95e",
   },
   {
     id: 3,
     title: "PIZZA PARTY",
     image: pizzaOne,
     color: "#084137",
+    filterId: "68a0881d002e6e98882d",
   },
   {
     id: 4,
     title: "BURRITO DELIGHT",
     image: buritto,
     color: "#EB920C",
+    filterId: "68a0881d0039c8dfd063",
   },
 ];
 

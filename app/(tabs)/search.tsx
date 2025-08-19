@@ -12,7 +12,7 @@ import { FlatList, Text, View } from "react-native";
 import { SafeAreaView } from "react-native-safe-area-context";
 
 const Search = () => {
-  // For url params
+  // For url params..
   const { category, query } = useLocalSearchParams<{
     query: string;
     category: string;
